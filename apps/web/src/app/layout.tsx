@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "../env";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
   title: "Jesus A. R. Vargas — AI Portfolio",
   description:
     "AI-powered portfolio of Jesus Adonis Rosario Vargas: featured projects, resume-trained chatbot, and an AI playground (Resume Builder, Meme Generator, Story Generator).",
+  metadataBase: new URL(SITE_URL),
 };
 
 export default function RootLayout({
